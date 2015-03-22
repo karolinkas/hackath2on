@@ -77,7 +77,9 @@ var ready = function() {
       if(userData[i].radius <= systemData[i].radius){
         svg.append("circle")
          .attr("r", 0 )
-         .style("fill", "#7BC2E9")
+         .style("stroke", "#7BC2E9")
+         .style("stroke-width","3px")
+         .style("fill","none")
          .transition()
          .duration(2000)
          .attr("cx", systemData[i].x/24 * (width - margin.left - margin.right))
@@ -104,7 +106,9 @@ var ready = function() {
 
         svg.append("circle")
          .attr("r", 0 )
-         .style("fill", "#7BC2E9")
+         .style("stroke", "#7BC2E9")
+         .style("stroke-width","3px")
+         .style("fill","none")
          .transition()
          .duration(2000)
          .attr("cx", systemData[i].x/24 * (width - margin.left - margin.right))
